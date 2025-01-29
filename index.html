@@ -3,43 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        .profile {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
-        }
-        .social-links a {
-            color: #333;
-            text-decoration: none;
-        }
-    </style>
+    <title>Paul Nguyen - Software Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="profile">
-        <h1>Your Name</h1>
-        <p>I build things with code</p>
-    </div>
-    <div class="social-links">
-        <a href="https://github.com/yourusername">GitHub</a>
-        <a href="https://twitter.com/yourusername">Twitter</a>
-    </div>
-    <div class="content">
-        <h2>About Me</h2>
-        <p>Write something about yourself here.</p>
-    </div>
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-8">
+            <div class="text-center">
+                <img src="assets/LinkedInProfilePicture.jpeg" alt="Paul Nguyen" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover shadow-lg">
+                <h1 class="text-3xl font-bold mb-2">PAUL NGUYEN</h1>
+                <div class="flex justify-center space-x-4 text-gray-600 text-sm">
+                    <span>(408) 480-4312</span>
+                    <span>|</span>
+                    <a href="mailto:paulsngyn@gmail.com" class="hover:text-gray-900">paulsngyn@gmail.com</a>
+                    <span>|</span>
+                    <a href="https://linkedin.com/in/paulsnguyen" class="hover:text-gray-900">LinkedIn</a>
+                    <span>|</span>
+                    <span>Austin, TX</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Experience Section -->
+        <section class="mb-12">
+            <h2 class="text-xl font-bold mb-6 pb-2 border-b-2 border-gray-200">EXPERIENCE</h2>
+            
+            <div class="mb-8">
+                <div class="mb-2">
+                    <h3 class="font-bold">Software Engineer, Apple</h3>
+                    <div class="text-gray-600 italic">Radar Tests | Austin, TX</div>
+                </div>
+                <ul class="list-disc ml-5 text-gray-700">
+                    <li class="mb-2">Reimplemented legacy features with modern frameworks providing safe, reusable, and scalable functionality across the application with Object Oriented and Protocol Oriented Programming Paradigms</li>
+                    <li class="mb-2">Implemented and improved multiple test suite features that enable and enhance user workflows throughout the organization with internal frameworks such as Appkit, SwiftUI, and Combine</li>
+                    <li>Collaborated with different teams to clarify the tradeoffs of various solutions enabling managers to make cost effective long term develop decisions while routing issues to the proper departments</li>
+                </ul>
+            </div>
+
+            <div class="mb-8">
+                <div class="mb-2">
+                    <h3 class="font-bold">Product Engineer, Richard Columbini's Preschool University</h3>
+                    <div class="text-gray-600 italic">Application Team | Santa Clara, CA</div>
+                </div>
+                <ul class="list-disc ml-5 text-gray-700">
+                    <li class="mb-2">Built and shipped reading applications used and loved by 88 schools with 500+ reviews and a 4.3 star average using Swift, UIKit, and xCode</li>
+                    <li class="mb-2">Automated and scaled end to end testing of functional requirements for complete coverage and a 91% reduction in testing time</li>
+                    <li>Revamped and drastically improved team collaboration and the application development process with assignment tracking and Git version control</li>
+                </ul>
+            </div>
+
+            <div class="mb-8">
+                <div class="mb-2">
+                    <h3 class="font-bold">Mobile Application Developer, Menon Labs</h3>
+                    <div class="text-gray-600 italic">CommonLit.org Mobile Team | Santa Clara, CA</div>
+                </div>
+                <ul class="list-disc ml-5 text-gray-700">
+                    <li class="mb-2">Developed local storage capabilities front end developers needed to create the application's user interface with SQLite</li>
+                    <li class="mb-2">Designed, implemented, and iterated upon a user interface enabling intuitive interaction of CommonLit.org's spanish library materials with React Native</li>
+                    <li>Presented the minimum viable product with new features to stakeholders demonstrating the viability of core functional requirements and new innovations to be considered for the official product release</li>
+                </ul>
+            </div>
+
+            <div class="mb-8">
+                <div class="mb-2">
+                    <h3 class="font-bold">Embedded Software Engineer, Aquantia</h3>
+                    <div class="text-gray-600 italic">Russian Development Center | San Jose, CA</div>
+                </div>
+                <ul class="list-disc ml-5 text-gray-700">
+                    <li class="mb-2">Refactored OpenAvnu's open source generic precision time protocol enabling the synchronous streaming of media to several devices using ethernet and proprietary network interface cards</li>
+                    <li>Tested and thoroughly documented the performance of proprietary software and hardware functionality relative to open source software to demonstrate product superiority and readiness for shipment</li>
+                </ul>
+            </div>
+
+            <!-- Additional experience entries follow same pattern -->
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-12">
+            <h2 class="text-xl font-bold mb-6 pb-2 border-b-2 border-gray-200">SKILLS</h2>
+            <div class="grid gap-4">
+                <div class="flex">
+                    <span class="font-bold w-32">Background:</span>
+                    <span class="text-gray-700">Software Engineer, Client Side MacOS / iOS / Mobile, Embedded Systems</span>
+                </div>
+                <div class="flex">
+                    <span class="font-bold w-32">Languages:</span>
+                    <span class="text-gray-700">C, C++, Objective C, Swift, Python, Javascript, Typescript, HTML, CSS, SQLite, Verilog</span>
+                </div>
+                <div class="flex">
+                    <span class="font-bold w-32">Frameworks:</span>
+                    <span class="text-gray-700">UIKit, AppKit, RDARKit, SwiftUI, Combine, React Native</span>
+                </div>
+                <div class="flex">
+                    <span class="font-bold w-32">Network:</span>
+                    <span class="text-gray-700">HTTP, REST, JSON</span>
+                </div>
+                <div class="flex">
+                    <span class="font-bold w-32">Hardware:</span>
+                    <span class="text-gray-700">I2C/SPI, STM32, JTAG, NIC</span>
+                </div>
+                <div class="flex">
+                    <span class="font-bold w-32">Tools:</span>
+                    <span class="text-gray-700">Git, xCode, Slack, Postman, Fork, Charles, Trello, Notion, Radar, Jira, CLI, Agile Development</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mb-12">
+            <h2 class="text-xl font-bold mb-6 pb-2 border-b-2 border-gray-200">PROJECTS</h2>
+            <div class="mb-6">
+                <h3 class="font-bold mb-2">Embedded Software Engineer: Autonomous Quadcopter</h3>
+                <div class="text-gray-600 italic mb-2">Senior Capstone</div>
+                <ul class="list-disc ml-5 text-gray-700">
+                    <li class="mb-2">Designed and built an Autonomous Quadcopter from scratch</li>
+                    <li class="mb-2">Implemented the Flight Controller in C with the STM32 and a custom Microcontroller</li>
+                    <li>Integrated raw sensor data into into a PID Control system with appropriate motor output</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <h2 class="text-xl font-bold mb-6 pb-2 border-b-2 border-gray-200">EDUCATION</h2>
+            <div class="mb-2">
+                <h3 class="font-bold">California State University</h3>
+                <div>Bachelors in Computer Engineering, Minor Mathematics</div>
+                <div class="text-gray-600 italic">Hayward, CA</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 mt-12">
+        <div class="max-w-4xl mx-auto px-4 py-6">
+            <p class="text-center text-gray-600">© 2024 Paul Nguyen. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
